@@ -1,0 +1,252 @@
+/* ----- MEDIA QUERY ----- */
+
+@media screen and (max-width: 1080px) {
+    .about_me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .name {
+        font-size: 1.2em;
+    }
+
+    .header {
+        grid-column: span 2;
+    }
+
+    .article_1 {
+        grid-column: 1;
+    }
+
+    .years_e {
+        grid-column: 1;
+    }
+
+    .projects {
+        grid-column: 2;
+    }
+
+    /* --------------- */
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20vh auto 20vh;
+    }
+
+    .myProjects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #slideshow {
+        margin-top: 8%;
+    }
+
+    /* -------------------- */
+
+    .contact {
+        height: 110vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .adress {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .adress h2 {
+        margin-bottom: 0;
+    }
+
+    .adress_1 {
+        margin-bottom: 0;
+    }
+
+    .submit {
+        width: 40%;
+    }
+
+    .arrow_up img {
+        width: 4vw;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    aside {
+        display: none;
+    }
+
+    #wrapper {
+        display: block;
+    }
+
+    .arrow_up img {
+        width: 4vw;
+    }
+
+    /* ------ */
+
+    #labela {
+        display: block;
+        cursor: pointer;
+        padding-left: 5%;
+        background-color: #181a1d;
+        color: white;
+    }
+
+    #labela:hover {
+        color: #adb5bd;
+        transition: 0.3s;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .hamb {
+        display: none;
+    }
+
+    #toggle:checked + .hamb {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+        background-color: #181a1d;
+        align-items: center;
+        height: 8vh;
+    }
+
+    .hamb li a:hover {
+        color: #adb5bd;
+        transition: 0.3s;
+    }
+
+    .hamb li {
+        display: flex;
+        justify-content: center;
+        border-right: 1px dotted white;
+    }
+
+    .hamb li:last-child {
+        border: none;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #home h3, .span {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 0.6em;
+    }
+
+    .arrow {
+        width: 0.9em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .comtrade img {
+        width: 11em;
+        height: 11em;
+    }
+
+    .header h2 {
+        font-size: 5em;
+    }
+
+    .header p {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 0.8em;
+    }
+
+    #home h3, .span {
+        font-size: 0.7em;
+    }
+
+    .button {
+        font-size: 0.5em;
+    }
+
+    .arrow {
+        width: 0.9em;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .about_me {
+        height: 120vh;
+    }
+
+    .article_1 {
+        grid-column: span 2;
+    }
+
+    .article_2 {
+        grid-column: span 2;
+    }
+
+    .margin_2 {
+        margin-bottom: 0;
+    }
+
+    #what_i_do {
+        height: 120vh;
+        grid-template-rows: 30vh 20vh 20vh 5vh;
+    }
+
+    #what_i_do .web_d {
+        grid-column: span 2;
+    }
+
+    #what_i_do .js {
+        grid-row: 3;
+        grid-column: span 2;
+    }
+
+    #what_i_do h2 {
+        grid-row: 4;
+        grid-column: span 2;
+    }
+
+    .progress_1 {
+        grid-row: 5;
+        grid-column: span 2;
+    }
+
+    .progress_2 {
+        grid-row: 6;
+        grid-column: span 2;
+    }
+
+    /* ------------ */
+
+    .portfolio {
+        grid-template-rows: 20vh repeat(6, 50vh) 20vh;
+    }
+
+    .myProjects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 50vh);
+    }
+
+    #slideshow {
+        grid-row: 8;
+        margin-top: 12%;
+        height: 80%;
+    }
+
+    .submit {
+        width: 45%;
+    }
+}
